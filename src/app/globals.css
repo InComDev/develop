@@ -1,45 +1,8 @@
-:root {
-  /* Colors */
+@import "../shared/style/normalise.css";
 
-  /* Main */
+:root {
   --bg: #f4f4f2;
   --bg-text: #291e0f;
-  --surface: #ffffff;
-  --primary-text: #ffffff;
-  --secondary-text: #ffffff;
-  --surface-text: #414141;
-  --primary: #ff6633;
-  --secondary: #70c05b;
-
-  /* Grayscale */
-  --lightest: #F3F2F1;
-  --light: #BFBFBF;
-  --hard: #8F8F8F;
-  --hardest: #606060;
-
-  /* Pallete */
-  --success: #008C49;
-  --info: #1CB9FC;
-  --warning: #FCA21C;
-  --error: #D80000;
-
-  /* Typography */
-
-  /* Weights */
-  --weight-normal: 400;
-  --weight-bold: 700;
-
-  /* Sizes */
-  --size-xs: 12px;
-  --size-s: 16px;
-  --size-m: 18px;
-  --size-l: 24px;
-  --size-xl: 36px;
-  --header-xs: 18px;
-  --header-s: 24px;
-  --header-m: 36px;
-  --header-l: 48px;
-  --header-xl: 64px;
 }
 
 @media (prefers-color-scheme: dark) {
