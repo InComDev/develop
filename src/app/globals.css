@@ -1,12 +1,14 @@
+@import "../shared/style/normalise.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f4f4f2;
+  --bg-text: #291e0f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #291e0f;
+    --bg-text: #ffffff;
   }
 }
 
@@ -17,9 +19,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--bg-text);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Rubik", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
