@@ -122,5 +122,6 @@
 
   input:disabled + .slider {
     background-color: #f8f8f8;
+    cursor: default;
   }
 }
