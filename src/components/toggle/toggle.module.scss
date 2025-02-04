@@ -1,0 +1,127 @@
+@import "@/shared/style/variables";
+
+@mixin mix_transform($translate) {
+  -webkit-transform: translateX($translate);
+  -ms-transform: translateX($translate);
+  transform: translateX($translate);
+}
+
+.switch.s {
+  width: 34px;
+  height: 16px;
+}
+
+.switch.m {
+  width: 46px;
+  height: 24px;
+}
+
+.switch.l {
+  width: 64px;
+  height: 32px;
+}
+
+.switch.xl {
+  width: 70px;
+  height: 36px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 32px;
+  }
+
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 2px;
+    top: 2px;
+    background-color: $--surface;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .slider.s::before {
+    width: 14px;
+    height: 14px;
+    left: 1px;
+    top: 1px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .slider.m::before {
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .slider.l::before {
+    width: 28px;
+    height: 28px;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .slider:hover::before {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  input:checked + .slider {
+    background-color: $--secondary;
+  }
+
+  input:checked + .slider.s::before {
+    @include mix_transform(18px);
+  }
+
+  input:checked + .slider.m::before {
+    @include mix_transform(22px);
+  }
+
+  input:checked + .slider.l::before {
+    @include mix_transform(32px);
+  }
+
+  input:checked + .slider.xl::before {
+    @include mix_transform(34px);
+  }
+
+  input:checked + .slider:hover::before {
+    background-color: $--surface;
+  }
+
+  input:disabled + .slider:hover::before,
+  input:disabled + .slider::before {
+    background-color: #e0e0e0;
+  }
+
+  input:disabled + .slider {
+    background-color: #f8f8f8;
+    cursor: default;
+  }
+}
