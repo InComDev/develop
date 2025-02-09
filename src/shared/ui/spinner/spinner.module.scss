@@ -1,0 +1,34 @@
+$circle-size: 100px;
+$circle-color: #3498db;
+$animation-duration: 1s;
+
+.loader {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: $circle-color;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    animation: spin $animation-duration linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
