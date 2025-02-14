@@ -1,0 +1,9 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<rect id="feather-icon / play-circle" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="Oval (Stroke)" d="M1.5 12C1.5 6.2 6.2 1.5 12 1.5C17.79 1.5 22.5 6.2 22.5 12C22.5 17.79 17.79 22.5 12 22.5C6.2 22.5 1.5 17.79 1.5 12ZM12 2.5C6.75 2.5 2.5 6.75 2.5 12C2.5 17.24 6.75 21.5 12 21.5C17.24 21.5 21.5 17.24 21.5 12C21.5 6.75 17.24 2.5 12 2.5Z" fill="#414141" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Shape (Stroke)" d="M9.76 7.55C9.92 7.47 10.12 7.48 10.27 7.58L16.27 11.58C16.41 11.67 16.5 11.83 16.5 12C16.5 12.16 16.41 12.32 16.27 12.41L10.27 16.41C10.12 16.51 9.92 16.52 9.76 16.44C9.6 16.35 9.5 16.18 9.5 16L9.5 8C9.5 7.81 9.6 7.64 9.76 7.55ZM10.5 8.93L10.5 15.06L15.09 12L10.5 8.93Z" fill="#414141" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
