@@ -102,7 +102,7 @@ const Select = ({
               )}
             </div>
             <span>
-              <Chevron_up />
+              <Chevron_down />
             </span>
           </div>
         </div>
