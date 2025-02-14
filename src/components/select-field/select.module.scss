@@ -76,6 +76,11 @@
     padding-left: 16px;
     cursor: pointer;
     height: 40px;
+    gap: 4px;
+  }
+
+  .option.optBoth {
+    padding-left: 4px;
   }
 
   .dropdown {
@@ -94,6 +99,8 @@
     .option.choosed:last-of-type {
       border-radius: 0 0 4px 4px;
     }
+
+
 
     .option:hover {
       color: $--primary-text;
